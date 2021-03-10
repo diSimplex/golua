@@ -19,7 +19,7 @@ package lua
 #cgo linux,!lua52,!lua53,!lua54,!llua,!luaa,!luajit,!lluadash5.1 LDFLAGS: -llua5.1
 #cgo linux,lua52,!llua,!luaa,!luajit,!lluadash5.1 LDFLAGS: -llua5.2
 #cgo linux,lua53,!llua,!luaa,!luajit,!lluadash5.1 LDFLAGS: -llua5.3
-#cgo linux,lua54,!llua,!luaa,!luajit,!lluadash5.1 LDFLAGS: -llua5.4 -lm
+#cgo linux,lua54,!llua,!luaa,!luajit,!lluadash5.1 LDFLAGS: -llua5.4 -lm -ldl
 
 #cgo darwin,!lua52,!lua53,!lua54,!llua,!luaa,!luajit,!lluadash5.1 pkg-config: lua5.1
 #cgo darwin,lua52,!llua,!luaa,!luajit,!lluadash5.1 pkg-config: lua5.2
@@ -29,7 +29,7 @@ package lua
 #cgo freebsd,!lua52,!lua53,!lua54,!llua,!luaa,!luajit,!lluadash5.1 LDFLAGS: -llua-5.1
 #cgo freebsd,lua52,!llua,!luaa,!luajit,!lluadash5.1 LDFLAGS: -llua-5.2
 #cgo freebsd,lua53,!llua,!luaa,!luajit,!lluadash5.1 LDFLAGS: -llua-5.3
-#cgo freebsd,lua54,!llua,!luaa,!luajit,!lluadash5.1 LDFLAGS: -llua-5.4 -lm
+#cgo freebsd,lua54,!llua,!luaa,!luajit,!lluadash5.1 LDFLAGS: -llua-5.4 -lm -ldl
 
 #cgo windows,!lua52,!lua53,!lua54,!llua,!luaa,!luajit,!lluadash5.1 LDFLAGS: -L${SRCDIR} -llua -lmingwex -lmingw32
 #cgo windows,lua52,!llua,!luaa,!luajit,!lluadash5.1 LDFLAGS: -llua52
